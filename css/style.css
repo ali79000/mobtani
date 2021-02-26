@@ -1,0 +1,391 @@
+
+#f{
+
+
+	text-align:			center;
+	
+	margin:				1%;
+	padding:			1%;
+	
+	position:			relative;
+
+}
+
+
+
+@font-face{
+	font-family:'Gandom';
+    src:url("../fonts/Gandom.eot");
+	src:url("../fonts/Gandom.woff");
+	src:url("../fonts/Gandom.ttf");
+}
+
+body{
+background-color:  #dedede   ;
+
+}
+
+#gotop{
+	background:linear-gradient(
+						90deg,
+						hsl(1000, 80%, 30%, .9),
+						hsl(1400, 50%, 70%, .9)
+					) ;
+
+border-radius:10em;
+	width:				65px;	
+	position:			fixed;
+	left:				calc(3vw - 25px);
+	top:				calc(83vh - 25px);
+}
+
+#gotop img{
+	width:				100%;
+	transform:			rotate(90deg);
+}
+
+main{
+font-family:Gandom;	
+}
+
+/*---خانه---*/
+
+.slideShow{
+ direction:rtl;    
+width:90%;
+	height:80vh;
+	display:block;
+	margin:auto;
+	position:relative;
+	margin-top:		3vh;
+}
+
+.slideShow img{
+	width:90%;
+	height:100%;
+
+}
+
+.slideShow figure{
+	margin:0;
+width:100%;
+height:100%;
+position:absolute;
+opacity:0;
+animation-name:slider;
+animation-duration:12s;
+animation-iteration-count:infinite;
+}
+
+.slideShow figure:first-child{
+				animation-delay:-4s;
+			}
+			.slideShow figure:nth-child(2){
+				animation-delay:0s;
+			}
+			.slideShow figure:nth-child(3){
+				animation-delay:4s;
+			}
+
+h1{
+	
+margin-top:		5vh;
+	text-align:center;
+	color: #1b0076
+;
+}
+
+h2{
+
+	text-align:center;
+	color:#1b0076;
+	font-size:1.7em;
+}
+
+h3{
+		margin-right:30px;
+	text-align:right;
+	color:white;
+	font-size:1.3em;
+}
+
+#monarLink:hover{
+    color: orange;
+    transition: all 0.1s ease-in-out; 
+}
+
+.icon{
+float:left;
+margin-top:-100px;
+margin-left:160px;
+	width:90px;
+	height:90px;
+}
+
+.p{
+direction: rtl;
+text-align:right;
+font-size:1.3em;	
+color:White;
+text-align:justify;
+}
+
+.pecho{
+ direction: rtl;   
+ text-align:center;
+ font-size:1.3em;
+ 	background-color: green;
+ 
+}
+
+figure{
+			text-align:	center;
+		}
+
+
+
+.image1{
+
+	width:700px;
+	height:400px;
+
+}
+
+.image2{	
+	width:400px;
+	height:400px;
+	margin-left:60%;
+	margin-top:-24%;
+}
+
+.icon1{
+float:left;
+margin-top:-77px;
+margin-left:15px;
+	width:60px;
+	height:70px;
+}
+
+footer{
+
+	background-color: #310000;
+	width:100%;
+margin-top: 200px;
+
+			padding:8px;
+	font-size:1.0em;
+	font-weight:bold;
+z-index:		999;
+    direction:		rtl;
+		margin-left:	-8px;
+	margin-right:	-8px;
+    
+    
+
+}
+
+.pf{
+	text-align:center;
+    padding:30px;
+		color:#ffffff;
+}
+
+
+/*---درباره ما---*/
+
+
+.hDarbareMa{
+	text-align:center;
+	margin-top:8%;
+	color:orange;
+	font-size:1.7em;
+}
+
+.pDarbareMa{
+	direction: rtl;
+    text-align:center;
+    font-size:1.1em;	
+    color:White;
+    font-weight:bold;
+}
+
+
+/*---ارتباط با ما---*/
+
+
+.hTamasbaMa{
+	text-align:center;
+		margin-top:5%;
+	color:orange;
+	font-size:1.8em;
+}
+
+.form{
+	text-align:center;
+	 direction:rtl;
+	 margin-left:70px;
+}
+.pf0{
+font-weight:bold;
+color:#1b0076;
+
+}
+
+.pf1{
+font-weight:bold;
+color:#1b0076;
+
+}
+
+.pf2{
+	font-weight:bold;
+	margin-right:-40px;
+    font-size: 25px;
+	color:#1b0076;
+}
+
+.pf3{
+	font-weight:bold;
+    font-size: 25px;
+    color:#1b0076;
+}
+
+.pf4{
+text-align: center;
+	font-weight:bold;
+    font-size: 25px;
+	color:#1b0076;
+}
+
+.input{
+	border-radius:8px;
+	border:solid 3px #8fa1a1;
+	background-color:#8fa1a1;
+	height:30px;
+	width:500px;
+	color:black;
+	padding:5px;
+	font-weight:bold;
+   margin-right:25px;
+	
+}
+
+//form input:hover{
+	border-color:white;
+background-color:white;
+ transition: all 0.1s ease-in-out; 
+}
+
+.input1{
+	border-radius:8px;
+	border:solid 3px #8fa1a1;
+	background-color:#8fa1a1;
+	color:black;
+	padding:10px;
+	font-weight:bold;
+ margin-right:50px;;
+}
+
+//.input1:hover{
+	border-color:white;
+background-color:white;
+ transition: all 0.1s ease-in-out; 
+}
+
+.input2{
+	border-radius:100px;
+	border:solid 3px #8fa1b9;
+	background-color:#8fa1b9;
+	color:black;
+    height:60px;
+	width:200px;
+	font-weight:bold;
+    margin-right:60px;
+font-size: 20px;
+
+	cursor:pointer;
+}
+
+.input2:hover{
+	border-color:green;
+
+ background:green;
+ transition: all 0.1s ease-in-out; 
+
+}
+
+
+/*---موبایل---*/
+.h1{
+	
+}
+
+.h2{
+	
+}
+.h3{
+color:orange;
+}
+.listM
+{
+	list-style:square url('../img/mobi.png') inside;
+	direction:rtl;
+font-size:1.7em;
+}
+#apple{
+	color:#bac5c9;
+	padding:5px;
+}
+#samsung{
+	color:#0066ff;
+	padding:5px;
+}
+#huawei{
+	color:#cc0000;
+	padding:5px;
+}
+#xiaomi{
+	color:#ff6600;
+	padding:5px;
+}
+#lg{
+	color:#ff4d94;
+	padding:5px;
+}
+#htc{
+	color:#33cc00;
+	padding:5px;
+}
+#nokia{
+	color:#0033cc;
+	padding:5px;
+}
+#blackberry{
+	color:#ffffff;
+	padding:5px;
+}
+#asus{
+	color:#000000;
+	padding:5px;
+}
+#sony{
+	color:#cccc00;
+	padding:5px;
+}
+#microsoft{
+	color:#1ad1ff;
+	padding:5px;
+}
+.listL
+{
+	list-style:square url('../img/tablet.png') inside;
+	direction:rtl;
+font-size:1.7em;
+}
+
+
+
+
+
+
+
