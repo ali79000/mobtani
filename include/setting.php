@@ -1,0 +1,16 @@
+<?php
+if( ! defined('DBHOST'))
+define('DBHOST','sql302.b6b.ir');
+if( ! defined('DBUSER'))
+define('DBUSER','b6bi_27932230');
+if( ! defined('DBPASS'))
+define('DBPASS','Ali13799731');
+if( ! defined('DBNAME'))
+define('DBNAME','b6bi_27932230_computer');
+
+
+$dbHost=DBHOST;
+$dbUser=DBUSER;
+$dbPass=DBPASS;
+$dbName=DBNAME;
+?>

@@ -1,3 +1,8 @@
+article{
+	direction:	rtl;
+	text-align:	right;
+    margin-top: 10px;
+}
 
 #f{
 
@@ -383,9 +388,30 @@ font-size:1.7em;
 font-size:1.7em;
 }
 
+.sabtt{
 
 
+          direction:rtl; 
+	text-align:center;
+        font-size:1.2em;
+	font-weight:bold;
+	font-family:serif;
+}
+.sabttt:hover{
+  
+color:	#310000;
+transition: all 0.1s ease-in-out; 
+}
+.sabttt{
+    
+    padding: 15px;
+    background-color: rgb(146, 112, 25);
+	text-decoration:none;
+    	color:white;
+      border: 1px solid rgb(146, 112, 25);
+  border-radius: 10px;
 
 
+}
 
 
