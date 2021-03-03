@@ -42,15 +42,32 @@ font-size:large;
 </header>
 
 <main>
-    <h1>محصولات خود را به فروش بگذارید</h1>
-<form action = "addProduct.php" method = "POST">	
-				
-			</form>
+<h1>محصولات خود را به فروش بگذارید</h1>
+<form class="form" action = "addProduct.php" method = "POST">	
+<div id="f">
+<label for="name" class="pf2">نام و مدل محصول</label>
+<input class="input" type="text" id="name" name="name" placeholder="نام و مدل محصول را وارد کنید"/> 
+</div>
+<div id="f">
+<label for="price" class="pf3">قیمت</label>
+<input class="input1" type="number" name="price" id="price" placeholder="تومان" />
+</div>
+<div id="f">
+<label for = "file" class="pf3">تصویر محصول</label>
+<input class="input1" type="file" name="productPicture" id="file"/>
+</div>
+<div id="f">
+<p class="pf4">توضیحات محصول</p>
+<textarea class="input1" name="description" id="description" rows="30" cols="150"/></textarea>
+<br>
+</div>
+<div id="f">
+<input class="input2" type="submit" name = "submit" value="ثبت" > 
+</div>
+</form>
 </main>
  <footer>
  <p class="pf">*تمامی حقوق این سایت محفوظ است علی میرمحمدصادقی*</p>
  </footer>
-
-	
  </body>
 </html>
