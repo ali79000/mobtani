@@ -1,6 +1,9 @@
 <?php
+
 include ('Product.php');
+
 include ('Register.php');
+
 include ('messages.php');
 if(! class_exists('DB')) {
 	class DB{
@@ -35,16 +38,26 @@ if(! class_exists('DB')) {
 
 		function execute( $sql, $params = false ){
 
-			$result = $this -> dbc -> query( $sql ); 
+			$result = $this -> dbc -> query( $sql );
 			if( $this -> dbc -> error ){
 				$error = "
 						خطا در اجرای کوئری!
 						<section lang = 'en'>{$sql}<br>
 						{$this -> dbc -> error}</section>";
 				die( $error );
+                	return false;
 			}
+            elseif($result !== true && $result !== false){
+               $table=$result -> fetch_all(MYSQLI_ASSOC);
+               return $table;
+            }
+            elseif(isset($this -> dbc -> insert_id)){
+                return $this -> dbc -> insert_id;
+
+            }
 			else
-				return true;
+				return $result;
+               
 		}
 		
 		function __destruct(){
@@ -53,4 +66,5 @@ if(! class_exists('DB')) {
 		}
 	}
 }
+
 ?>

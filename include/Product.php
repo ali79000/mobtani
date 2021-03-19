@@ -15,7 +15,7 @@
 			static function add( $params ){
 				$columnsString = self::columnsList( $params );
 				$valuesString = self::valuesList( $params );
-				$tableName = __CLASS__; 
+				$tableName = get_class(); 
 				
 				
 				$sql = "INSERT INTO {$tableName}({$columnsString}) 
@@ -28,7 +28,15 @@
 			}
 			static function update(){}
 			static function delete(){}
-			static function find(){}
+			static function find($where='TRUE',$order='id DESC',$count=10000,$offset=0){
+                	$tableName = get_class();
+                    $sql = "SELECT * FROM {$tableName} 
+                    WHERE {$where} 
+                    ORDER BY {$order} 
+                    LIMIT {$offset}, {$count}";
+                    $table = $GLOBALS['db'] -> execute( $sql );
+                    return $table;
+            }
 		}
 	}
 ?>
